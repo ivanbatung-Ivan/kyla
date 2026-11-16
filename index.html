@@ -1,35 +1,43 @@
 <!doctype html>
-<html lang="en"><head>
+<html lang="en">
+<head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#fff0f5"><title>For Ma'am Roan ♡</title>
-<link rel="stylesheet" href="style.css"></head>
+<meta name="theme-color" content="#fff0f5"><title>A Thank You for Ma'am Roan ♡</title>
+<link rel="stylesheet" href="style.css">
+</head>
 <body>
 <div class="decor" aria-hidden="true"><i>✿</i><i>♡</i><i>✧</i><i>🌷</i><i>♡</i><i>✦</i></div>
 <main class="page">
   <div class="eyebrow">FIRST SEMESTER, WRAPPED WITH GRATITUDE</div>
   <h1>A little thank you<br><em>for Ma’am Roan</em></h1>
-  <p class="sub">One semester down, lots of lessons to keep. ♡</p>
+  <p class="subtitle">One semester down, lots of lessons to keep. ♡</p>
+
   <section class="scene">
-    <div class="note left">made with<br>appreciation</div><div class="note right">a little something<br>for you ♡</div>
-    <div class="envelope" id="envelope" role="button" tabindex="0" aria-label="Open appreciation letter">
-      <div class="letter"><article class="paper">
-        <div class="paperline"><span>♡ A NOTE OF THANKS ♡</span><span>01 / 01</span></div>
-        <div class="flowers">✿　🌷　✿</div>
-        <p class="dear">Dear Ma’am Roan,</p><h2>Thank you so much!</h2>
-        <div class="message">
-          <p>Since tapos na ang first semester, gusto ko lang po kayong pasalamatan. Thank you po sa lahat ng effort, patience, and time na binigay ninyo sa amin this sem.</p>
-          <p>Thank you rin po sa mga lessons, reminders, advice, and even sa mga moments na challenging pero marami kaming natutunan. We appreciate how you guide us and help us understand things better. Hindi man po namin nasasabi palagi, malaking bagay po yung dedication ninyo.</p>
-          <p>Hopefully, you get to enjoy a well-deserved break. Sana po alam ninyo na appreciated kayo, not just as a teacher, but as someone who made this semester a little more meaningful.</p>
-        </div>
-        <p class="closing">Thank you po ulit, Ma’am. Take care always! ♡</p>
-        <div class="sign">With gratitude,<br><strong>Ivan Lorenz</strong></div>
-        <div class="stamp">END OF<br>1ST SEM<br>✦</div>
-      </article></div>
+    <div class="envelope" id="envelope" role="button" tabindex="0" aria-label="Open your letter">
       <div class="back"></div><div class="front"></div><div class="flap"></div><div class="seal">♡</div>
     </div>
+    <div class="side-note">A little note, made with appreciation ✿</div>
   </section>
-  <button id="openBtn" class="open">Open your letter <span>↗</span></button>
-  <button id="closeBtn" class="close" hidden>Close letter ↺</button>
-  <p id="hint" class="hint">A small note to celebrate the end of our first semester.</p>
+
+  <button class="open-btn" id="openBtn">Open your letter <span>↗</span></button>
+  <p class="hint" id="hint">Tap the envelope and watch your message appear.</p>
   <footer>crafted with a grateful heart ✿ — Ivan Lorenz</footer>
-</main><div id="confetti"></div><script src="script.js"></script></body></html>
+</main>
+
+<div class="letter-overlay" id="letterOverlay" aria-hidden="true">
+  <article class="letter-card">
+    <button class="x-close" id="xClose" aria-label="Close letter">×</button>
+    <div class="letter-top">♡ A NOTE OF THANKS ♡ <span>END OF FIRST SEMESTER</span></div>
+    <div class="flowers">✿　🌷　✿</div>
+    <p class="dear">Dear Ma’am Roan,</p>
+    <h2>Thank you so much!</h2>
+    <div class="type-area"><p id="typedMessage" class="typed-message"></p><span class="caret" id="caret"></span></div>
+    <p class="closing" id="closing" hidden>Thank you po ulit, Ma’am. Take care always! ♡</p>
+    <div class="signature" id="signature" hidden>With gratitude,<br><strong>Ivan Lorenz</strong></div>
+    <div class="letter-bottom">made with appreciation · 01 / 01</div>
+  </article>
+</div>
+
+<div id="confetti" aria-hidden="true"></div>
+<script src="script.js"></script>
+</body></html>
